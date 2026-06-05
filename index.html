@@ -416,7 +416,7 @@
     /* Select banner */
     .select-banner-inner { flex-direction:column; padding:48px 24px; }
     .select-banner-desc { font-size:16px; }
-    .select-banner-link { text-align:center; justify-content:center; }
+    .select-banner-link { text-align:center; justify-content:center; width:100%; }
 
     /* Footer */
     footer { padding:32px 24px; flex-direction:column; text-align:center; }
@@ -582,7 +582,7 @@
     <div class="course-meta-item">
       <p class="meta-label">課程目標</p>
       <p class="meta-value">滑行修正<br>指定特殊風格</p>
-      <p class="meta-note">Carving、不整地、樹林、Park、平花等風格皆可指定</p>
+
     </div>
     <div class="course-meta-item">
       <p class="meta-label">上課人數</p>
@@ -591,8 +591,7 @@
     </div>
     <div class="course-meta-item">
       <p class="meta-label">課程期間</p>
-      <p class="meta-value"><span class="accent-blue">12/21</span> – <span class="accent-blue">3/26</span></p>
-      <p class="meta-note">2026年12月21日 ～ 2027年3月26日</p>
+      <p class="meta-value" style="font-size:15px;">2026年12月21日 ～ 2027年3月26日</p>
     </div>
     <div class="course-meta-item">
       <p class="meta-label">上課地點</p>
@@ -656,8 +655,7 @@
 
     <!-- Surcharges -->
     <div class="reveal">
-      <p class="section-eyebrow" style="color:rgba(245,243,239,.4);">Additional Fees</p>
-      <h3 style="font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:2px;color:var(--snow);margin-bottom:24px;">加收費用說明</h3>
+
     </div>
     <div class="surcharge-grid reveal" style="margin-top:2px;">
       <div class="surcharge-item">
@@ -906,44 +904,58 @@
 <!-- SELECT BANNER -->
 <div class="select-banner">
   <div class="select-banner-img"></div>
-  <div class="select-banner-inner">
-    <div>
-      <p class="select-banner-tag">Also Available</p>
-      <h3 class="select-banner-title">越後湯澤私人課</h3>
-      <p class="select-banner-desc">新潟縣越後湯澤，石打丸山為主場地，同樣提供專屬私人教練課程。</p>
+  <div class="select-banner-inner reveal">
+    <div class="select-banner-left">
+      <p class="select-banner-tag">Storage · 雪具倉儲</p>
+      <h3 class="select-banner-title">日本雪具倉儲</h3>
+      <p class="select-banner-desc">滑雪季結束後，雪具直接存放在日本。<br>下個雪季安排好住宿，預約送到指定旅館——<br>讓心愛的雪具與你的旅程無縫接軌。</p>
     </div>
-    <a href="https://www.iski.com.tw/ski-school/yuzawa-private" class="select-banner-link">查看湯澤課程</a>
+    <a href="https://www.iski-select.com.tw/pages/storage" target="_blank" class="select-banner-link">了解倉儲服務</a>
   </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <span class="footer-logo">iSKI CLUB</span>
+  <span class="footer-logo"><a href="https://www.iski.com.tw/" target="_blank" style="display:block;"><img src="https://stage.iski.com.tw/image/catalog/snowing/01.home/link/M/M_Website_home logo01.png" alt="iSKI" style="height:22px;width:auto;display:block;opacity:0.55;"></a></span>
   <ul class="footer-links">
-    <li><a href="https://www.iski.com.tw/ski-school">滑雪學校</a></li>
-    <li><a href="https://www.iski.com.tw/privacy-policy">隱私權政策</a></li>
-    <li><a href="https://www.iski.com.tw/terms-of-service">服務條款</a></li>
+    <li><a href="#">越後湯澤</a></li>
+    <li><a href="#">北海道</a></li>
+    <li><a href="#">藏王</a></li>
+    <li><a href="#">留壽都</a></li>
+    <li><a href="#">課程購買</a></li>
+    <li><a href="https://www.iski-select.com.tw" target="_blank">雪物嚴選</a></li>
+    <li><a href="https://www.iski.com.tw/login" target="_blank">會員中心</a></li>
+    <li><a href="https://www.iski.com.tw/" target="_blank">官網首頁</a></li>
   </ul>
   <div class="footer-social">
-    <a href="https://www.facebook.com/iski.tw" class="footer-social-link" target="_blank">
+    <a href="#" class="footer-social-link" target="_blank" title="iSKI粉絲頁">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-      iSKI FB
+      iSKI粉絲頁
     </a>
     <span class="footer-divider"></span>
-    <a href="https://m.me/iski.tw" class="footer-social-link" target="_blank">
+    <a href="#" class="footer-social-link" target="_blank" title="滑雪宇宙">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      滑雪宇宙
+    </a>
+    <span class="footer-divider"></span>
+    <a href="#" class="footer-social-link" target="_blank" title="iSKI IG">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      iSKI IG
+    </a>
+    <span class="footer-divider"></span>
+    <a href="https://m.me/iski.tw" class="footer-social-link" target="_blank" title="客服聯繫">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.145 2 11.259c0 2.883 1.308 5.465 3.374 7.234V22l3.079-1.688c.822.226 1.693.347 2.547.347 5.523 0 10-4.145 10-9.259C22 6.145 17.523 2 12 2zm1.007 12.464l-2.548-2.715-4.97 2.715 5.467-5.799 2.61 2.715 4.908-2.715-5.467 5.799z"/></svg>
       客服聯繫
     </a>
   </div>
-  <span class="footer-copy">© 2026 iSKI Club · All rights reserved</span>
+  <span class="footer-copy">© 2026 iSKI 滑雪俱樂部 · iSKI Club · All rights reserved</span>
 </footer>
-<div style="background:#1e2830;border-top:1px solid rgba(245,243,239,.06);padding:16px 60px;text-align:center;">
-  <p style="font-size:12px;color:rgba(245,243,239,.35);letter-spacing:.5px;">
-    Copyright © 2026 iSKI滑雪俱樂部 All rights reserved．
-    <a href="https://www.iski.com.tw/privacy-policy" style="color:rgba(245,243,239,.45);text-decoration:none;">隱私權政策</a>
-    　｜　
-    <a href="https://www.iski.com.tw/terms-of-service" style="color:rgba(245,243,239,.45);text-decoration:none;">網站服務條款</a>
-  </p>
+
+<div style="background:#1a1c1e;border-top:1px solid rgba(245,243,239,.06);padding:16px 48px;text-align:center;font-family:'Noto Sans TC',sans-serif;font-size:11px;letter-spacing:1px;color:rgba(245,243,239,.35);line-height:2;">
+  Copyright © 2026 iSKI滑雪俱樂部 All rights reserved．
+  <a href="https://www.iski.com.tw/privacy-policy" target="_blank" style="color:rgba(245,243,239,.45);text-decoration:none;" onmouseover="this.style.color='rgba(245,243,239,.85)'" onmouseout="this.style.color='rgba(245,243,239,.45)'">隱私權政策</a>
+  ｜
+  <a href="https://www.iski.com.tw/terms-of-service" target="_blank" style="color:rgba(245,243,239,.45);text-decoration:none;" onmouseover="this.style.color='rgba(245,243,239,.85)'" onmouseout="this.style.color='rgba(245,243,239,.45)'">網站服務條款</a>
 </div>
 
 <a href="https://m.me/iski.tw" target="_blank" class="floating-messenger" title="聯絡客服">
